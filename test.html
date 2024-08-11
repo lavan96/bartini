@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotenders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&family=Anton+SC&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #000000;
+            color: #f0e68c; /* Off-white */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar, .footer {
+            background-color: #000000;
+        }
+
+        .navbar-brand, .nav-link {
+            
+            color: #f0e68c !important; /* Off-white */
+            font-family: 'Ubuntu', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .nav-link:hover {
+            color: #ffd700 !important; /* Gold */
+        }
+
+        .btn-primary {
+            
+            background-color: #f0e68c; /* Off-white */
+            color: #000000;
+            border-color: #f0e68c;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffd700; /* Gold */
+            border-color: #ffd700;
+            color: #000000;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        h1, h2, h5, p, .card-title, .card-text {
+            color: #f0e68c; /* Off-white */
+        }
+
+        h1, h2 {
+            font-family: 'Anton SC', sans-serif;
+        }
+
+        h5 {
+            font-family: 'Great Vibes', cursive;
+            margin-top: 1em;
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+
+        .card {
+            background-color: #000000;
+            border: 0px solid #ffd700; /* Gold */
+            border-radius: 0px;
+        }
+
+        .card-title {
+            color: #ffd700;
+        }
+
+        .card-body {
+            color: #f0e68c; /* Off-white */
+        }
+
+        .footer {
+            color: #f0e68c;
+        }
+
+        .form-control, .form-label {
+            background-color: #000000;
+            color: #f0e68c;
+            border: 1px solid #ffd700; /* Gold */
+        }
+
+        .form-control:focus {
+            background-color: #000000;
+            color: #ffd700; /* Gold */
+            border: 1px solid #f0e68c; /* Off-white */
+            box-shadow: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            #web{
+                display:none;
+
+            }
+
+            #mobile{
+                display: block;
+            }
+
+            .web{
+                display:none;
+
+            }
+
+            .mobile{
+                display: block;
+            }
+        }
+        @media screen and (min-width: 769px) {
+            #web{
+                display:block;
+
+            }
+
+            #mobile{
+                display: none;
+            }
+
+            .web{
+                display:block;
+
+            }
+
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bartini Bartending</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+    <!-- Home Section -->
+    <section id="web" class="web" class="" style="background-image: url(hero.webp); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
+        <div class="container" style="align-items:flex-end;">
+            <h1 class="display-4">Welcome to <br><span style="color: #ffd700; font-size: 5rem;">Bartini<br>Bartending</span></h1>
+            <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2em;">Here for all your party favors</p><br>
+            <a href="#services" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+    <section  id="mobile" class="text-center" style="background-image: url(hero.webp); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
+        <div class="container" style="align-items:flex-end; background-color: #000000a9; padding: 3em;">
+            <h1 class="display-4">Welcome to <br><span style="color: #ffd700; font-size: 5rem;">Bartini<br>Bartending</span></h1>
+            <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2em;">Here for all your party favors</p><br>
+            <a href="#services" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+</section>
+    <!-- Services Section -->
+    <section id="services" class="p-5">
+        <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Our <span style="color: #ffd700;">Services</span></h2>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="wedding-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                        <img src="wedding.webp" alt="" style="max-width: 100%;">
+                        <h5 class="card-title">Weddings</h5>
+                        <p class="card-text">We ensure weddings are unforgettable with custom drink menus and professional bartending services tailored to your special day.</p>
+                        <br><a href="#services" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="corporate-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                        <img src="corporate.webp" alt="" style="max-width: 100%;">
+                        <h5 class="card-title">Corporate Events</h5>
+                        <p class="card-text">Enhance your corporate events with our expert drink services suitable for any business gathering.</p>
+                        <br><a href="#services" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="cocktail-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                        <img src="cocktails.webp" alt="" style="max-width: 100%;">
+                        <h5 class="card-title">Cocktail & Mocktails</h5>
+                        <p class="card-text">Enjoy a variety of expertly crafted cocktails and mocktails designed to match your event's theme and preferences.</p>
+                        <br><a href="#services" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="container web" style="padding-top: 80px;">
+            <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Our <span style="color: #ffd700;">Services</span></h2>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="wedding-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="wedding.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Weddings</h5>
+                            <p class="card-text">We ensure weddings are unforgettable with custom drink menus and professional bartending services tailored to your special day.</p>
+                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="corporate-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="corporate.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Corporate Events</h5>
+                            <p class="card-text">Enhance your corporate events with our expert drink services suitable for any business gathering.</p>
+                            <br><br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="cocktail-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="cocktails.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Cocktails & Mocktails</h5>
+                            <p class="card-text">Enjoy a variety of expertly crafted cocktails and mocktails designed to match your event's theme and preferences.</p>
+                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="" style="padding: 3em;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="padding: 2em; align-content:center;">
+                    <h2 style="font-size: 4em;">About <span style="color: #ffd700;">Bartini</span></h2>
+                    <p>Bartini offers top-notch bartending services, transforming events into memorable celebrations with skilled bartenders, cocktail waitresses, and comprehensive alcohol catering.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="bartini-header.webp" class="img-fluid" alt="Brotenders team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="">
+                    <h5>Get a Quote</h5>
+                    <p>Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer p-3 text-center">
+        <p>&copy; 2024 Brotenders. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
