@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brotenders</title>
+    <title>Bartini Bartending</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&family=Anton+SC&family=Great+Vibes&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.css" integrity="sha512-bWYN2AWIkJL+UdLBJRvqGm6FMPJ7b6rMRNjlhpmZcUyV+in5Gr2ZPytvNC+RU0LO/vH1seIze1ZueA7SLE7eqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             background-color: #000000;
@@ -21,7 +22,8 @@
         .navbar-brand, .nav-link {
             
             color: #f0e68c !important; /* Off-white */
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 700;
             text-transform: uppercase;
         }
 
@@ -80,6 +82,34 @@
             color: #f0e68c;
         }
 
+        .footer-logo {
+    max-width: 200px;
+}
+.footer-section {
+    margin-bottom: 20px;
+}
+.footer-section h3 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+.footer-section a {
+    color: #f0e68c;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-section a:hover {
+    color: #ffd700;
+}
+.social-icons a {
+    color: #f0e68c;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: #ffd700;
+}
+
         .form-control, .form-label {
             background-color: #000000;
             color: #f0e68c;
@@ -111,6 +141,14 @@
             .mobile{
                 display: block;
             }
+
+            .navbar-nav{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: right;
+}
         }
         @media screen and (min-width: 769px) {
             #web{
@@ -139,13 +177,14 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Bartini Bartending</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FFd700;">
+                <span class="navbar-toggler-icon" style="align-content: center;"> <i class="fa-solid fa-bars" style="color: #FFd700;"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -169,34 +208,83 @@
         </div>
     </section>
 </section>
+
+<!-- About Section -->
+<section id="about" class="" style="padding-top: 4em;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="padding: 2em; align-content:center;">
+                <h2 style="font-size: 4em;">Bartending without <span style="color: #ffd700;">Boundaries</span></h2>
+                <br><h2 style="font-size: 2.5em;">We bring the bar <span style="color: #ffd700;">to you</span></h2>
+                <br><p style="text-align: justify;">A professional, fully insured bartending company in Klang Valley, that offers you and your guests a one-of-a-kind bartending experience. We serve weddings, special & corporate events with our portable bars and other unique bar rental options. We specialize in signature craft cocktails using seasonal and fresh ingredients and are committed to providing you and your guests a custom & memorable experience that will be talked about for days and toasted to for years to come!</p>
+            </div>
+            <div class="col-md-6" style="align-content: center; padding: 2em;">
+                <img src="bartini-header.webp" class="img-fluid" alt="Bartini team">
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Services Section -->
     <section id="services" class="p-5">
-        <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Our <span style="color: #ffd700;">Services</span></h2>
+        <h2 class="text-center mb-4 mobile" style="font-size:4em; padding-bottom: 0.3em;">Events  <br><span style="color: #ffd700;">Catalogue</span></h2>
         <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
             <div class="carousel-inner">
-              <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;">
+              <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
                 <div class="card">
                     <div class="card-body text-center">
                         <img src="wedding-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
                         <img src="wedding.webp" alt="" style="max-width: 100%;">
                         <h5 class="card-title">Weddings</h5>
-                        <p class="card-text">We ensure weddings are unforgettable with custom drink menus and professional bartending services tailored to your special day.</p>
+                        <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
                         <br><a href="#services" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
               </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;">
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
                 <div class="card">
                     <div class="card-body text-center">
                         <img src="corporate-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
                         <img src="corporate.webp" alt="" style="max-width: 100%;">
                         <h5 class="card-title">Corporate Events</h5>
-                        <p class="card-text">Enhance your corporate events with our expert drink services suitable for any business gathering.</p>
+                        <p class="card-text">Elevate your corporate events with Bartini Bartenders' professional drink services, perfect for any business gathering. We ensure your event runs smoothly with expertly crafted beverages.</p>
                         <br><a href="#services" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
               </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;">
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="private-function-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                        <img src="private-function.webp" alt="" style="max-width: 100%;">
+                        <h5 class="card-title">Private Functions</h5>
+                        <p class="card-text">Whether it's an intimate gathering or a large private event, Bartini Bartenders provides exceptional bartending services that will impress your guests. We tailor our offerings to match the unique vibe of your function, ensuring a seamless and luxurious experience.</p>
+                        <br><a href="#services" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="birthday-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                        <img src="birthday.webp" alt="" style="max-width: 100%;">
+                        <h5 class="card-title">Birthdays</h5>
+                        <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
+                        <br><a href="#services" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="bachelor-party-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                        <img src="bachelor-party.webp" alt="" style="max-width: 100%;">
+                        <h5 class="card-title">Bachelor Parties</h5>
+                        <p class="card-text">Make your bachelor party a night to remember with Bartini Bartenders. Our professional bartenders and mixologists will keep the drinks flowing, ensuring you and your friends enjoy top-quality service and a fantastic time before the big day.</p>
+                        <br><a href="#services" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
                 <div class="card">
                     <div class="card-body text-center">
                         <img src="cocktail-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
@@ -217,8 +305,9 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
         <div class="container web" style="padding-top: 80px;">
-            <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Our <span style="color: #ffd700;">Services</span></h2>
+            <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Events  <br><span style="color: #ffd700;">Catalogue</span></h2>
             <div class="row text-center g-4">
                 <div class="col-md-4">
                     <div class="card">
@@ -226,8 +315,8 @@
                             <img src="wedding-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
                             <img src="wedding.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Weddings</h5>
-                            <p class="card-text">We ensure weddings are unforgettable with custom drink menus and professional bartending services tailored to your special day.</p>
-                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                            <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
+                            <br><br><br><a href="#services" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -237,58 +326,421 @@
                             <img src="corporate-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
                             <img src="corporate.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Corporate Events</h5>
-                            <p class="card-text">Enhance your corporate events with our expert drink services suitable for any business gathering.</p>
-                            <br><br><a href="#services" class="btn btn-primary">Learn More</a>
+                            <p class="card-text">Elevate your corporate events with Bartini Bartenders' professional drink services, perfect for any business gathering. We ensure your event runs smoothly with expertly crafted beverages.</p>
+                            <br><br><br><a href="#services" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <img src="cocktail-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="cocktails.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Cocktails & Mocktails</h5>
-                            <p class="card-text">Enjoy a variety of expertly crafted cocktails and mocktails designed to match your event's theme and preferences.</p>
+                            <img src="private-function-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="private-function.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Private Functions</h5>
+                            <p class="card-text">Whether it's an intimate gathering or a large private event, Bartini Bartenders provides exceptional bartending services that will impress your guests. We tailor our offerings to match the unique vibe of your function, ensuring a seamless and luxurious experience.</p>
                             <br><a href="#services" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="" style="padding: 3em;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="padding: 2em; align-content:center;">
-                    <h2 style="font-size: 4em;">About <span style="color: #ffd700;">Bartini</span></h2>
-                    <p>Bartini offers top-notch bartending services, transforming events into memorable celebrations with skilled bartenders, cocktail waitresses, and comprehensive alcohol catering.</p>
+            <div class="row text-center g-4" style="padding-top: 3em; text-align: center;">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="birthday-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="birthday.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Birthdays</h5>
+                            <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
+                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="bartini-header.webp" class="img-fluid" alt="Brotenders team">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="bachelor-party-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="bachelor-party.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Bachelor Parties</h5>
+                            <p class="card-text">Make your bachelor party a night to remember with Bartini Bartenders. Our professional bartenders and mixologists will keep the drinks flowing, ensuring you and your friends enjoy top-quality service and a fantastic time before the big day.</p>
+                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-2"></div>
             </div>
         </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="" style="padding-top: 4em;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="align-content: center; padding: 2em;">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="max-width: 100%;" data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="whiskey-sour.webp" alt="" style="max-width: 100%;">
+                                    <h5 class="card-title" style="color: #ffd700;">Whiskey Sour</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="max-width: 100%;" data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="old-fashioned-cocktail.webp" alt="" style="max-width: 100%;">
+                                    <h5 class="card-title" style="color: #ff6f00;">Old Fashioned</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="max-width: 100%;" data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="southside-cocktail.webp" alt="" style="max-width: 100%;">
+                                    <h5 class="card-title" style="color: #9dff00;">Southside</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="max-width: 100%;" data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="bramble-cocktail.webp" alt="" style="max-width: 100%;">
+                                    <h5 class="card-title" style="color: #d80082;">Bramble</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="max-width: 100%;" data-bs-interval="2000">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="bloody-mary-cocktail.webp" alt="" style="max-width: 100%;">
+                                    <h5 class="card-title" style="color: #ff1500;">Bloody Mary</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 text-center" style="padding: 4em; align-content:center;">
+                <h2 style="font-size: 4em;">Our Signature <span style="color: #ffd700; font-size: 1.5em;">Cocktails</span></h2>
+                <br>
+                <p style="text-align: center; font-family: 'Great Vibes', cursive; font-size: 2em; color: #ffd700;">
+                    Make the bar the beating heart of your celebration with our signature cocktails. All you have to do is sit back, sip, and enjoy the night.
+                </p>
+                <br>
+                <a href="#services" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <section id="services" class="p-5">
+            <h2 class="text-center mb-4 mobile" style="font-size:4em; padding-bottom: 0.3em;">Professional & Reliable  <br><span style="color: #ffd700;">Bar Services</span></h2>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="portable-bar-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="portable-bar.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Portable Bar</h5>
+                            <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
+                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="cocktail-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="cocktails.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Cocktail & Mocktails</h5>
+                            <p class="card-text">Enjoy a variety of expertly crafted cocktails and mocktails designed to match your event's theme and preferences.</p>
+                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="bartender-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="bartender-1.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Bartenders</h5>
+                            <p class="card-text">Elevate your corporate events with Bartini Bartenders' professional drink services, perfect for any business gathering. We ensure your event runs smoothly with expertly crafted beverages.</p>
+                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="glassware-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="glassware.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Glasswares</h5>
+                            <p class="card-text">Whether it's an intimate gathering or a large private event, Bartini Bartenders provides exceptional bartending services that will impress your guests. We tailor our offerings to match the unique vibe of your function, ensuring a seamless and luxurious experience.</p>
+                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="party-games-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                            <img src="party-games-2.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title">Party Games</h5>
+                            <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
+                            <br><a href="#services" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                  </div>
+
+                
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="container web" style="padding-top: 80px;">
+                <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Professional & Reliable  <br><span style="color: #ffd700;">Bar Services</span></h2>
+                <div class="row text-center g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="portable-bar-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                                <img src="portable-bar.webp" alt="" style="max-width: 100%;">
+                                <h5 class="card-title">Portable Bar</h5>
+                                <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
+                                <br><br><br><a href="#services" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="cocktail-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                                <img src="cocktails.webp" alt="" style="max-width: 100%;">
+                                <h5 class="card-title">Cocktails & Mocktails</h5>
+                                <p class="card-text">Enjoy a diverse selection of expertly crafted cocktails and mocktails, tailored to suit your event's theme. Bartini Bartenders creates drinks that perfectly match your preferences.</p>
+                                <br><br><br><a href="#services" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="bartender-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                                <img src="bartender-1.webp" alt="" style="max-width: 100%;">
+                                <h5 class="card-title">Bartenders</h5>
+                                <p class="card-text">Whether it's an intimate gathering or a large private event, Bartini Bartenders provides exceptional bartending services that will impress your guests. We tailor our offerings to match the unique vibe of your function, ensuring a seamless and luxurious experience.</p>
+                                <br><a href="#services" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center g-4" style="padding-top: 3em; text-align: center;">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="glassware-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                                <img src="glassware.webp" alt="" style="max-width: 100%;">
+                                <h5 class="card-title">Glasswares</h5>
+                                <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
+                                <br><a href="#services" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="party-games-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
+                                <img src="party-games-2.webp" alt="" style="max-width: 100%;">
+                                <h5 class="card-title">Party Games</h5>
+                                <p class="card-text">Make your bachelor party a night to remember with Bartini Bartenders. Our professional bartenders and mixologists will keep the drinks flowing, ensuring you and your friends enjoy top-quality service and a fantastic time before the big day.</p>
+                                <br><a href="#services" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
     </section>
+
+    
 
     <!-- Contact Section -->
     <section id="contact" class="p-5">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
+            <h2 class="text-center mb-4" style="font-size: 4em; padding-top: 2em;">Get a <span style="color: #ffd700;">Quote</span></h2>
             <div class="row">
-                <div class="">
-                    <h5>Get a Quote</h5>
-                    <p>Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</p>
+                <div class="text-center">
+                    <h5 style="color: #ffd700; font-size: 2.3em;">Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</h5>
+                    <p></p>
                 </div>
                 
             </div>
         </div>
     </section>
 
+    <section id="services" class="p-5">
+        <h2 class="text-center mb-4 mobile" style="font-size:4em; padding-bottom: 0.3em;">Our  <br><span style="color: #ffd700;">Shop</span></h2>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body">
+                        
+                        <img src="Bailey's Chocolate.png" alt="" style="max-width: 100%;">
+                        <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Bailey's Chocolate 375g</h5>
+                        <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 98.00</p>
+                        <br><a href="#services" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="Cocktail chocolates.png" alt="" style="max-width: 100%;">
+                        <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Liqeur Cocktail 16 Flavors</h5>
+                        <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
+                        <br><a href="#services" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body">
+                        
+                        <img src="Coffee Liqueur Chocolates.png" alt="" style="max-width: 100%;">
+                        <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Coffee Liqueur 187g (12pcs)</h5>
+                        <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
+                        <br><a href="#services" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="Himalaya Hangover Pill.webp" alt="" style="max-width: 100%;">
+                        <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Himalaya PS (PartySmart)</h5>
+                        <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 29.90</p>
+                        <br><a href="#services" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+              </div>
+
+            
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="container web" style="padding-top: 80px;">
+            <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Our  <br><span style="color: #ffd700; font-size: 1.5em;">Shop</span></h2>
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <img src="Bailey's Chocolate.png" alt="" style="max-width: 100%;">
+                            <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Bailey's Chocolate 375g</h5>
+                            <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 98.00</p>
+                            <br><a href="#services" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Cocktail chocolates.png" alt="" style="max-width: 100%;">
+                            <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Liqeur Cocktail 16 Flavors</h5>
+                            <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
+                            <br><a href="#services" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <img src="Coffee Liqueur Chocolates.png" alt="" style="max-width: 100%;">
+                            <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Coffee Liqueur 187g (12pcs)</h5>
+                            <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
+                            <br><a href="#services" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Himalaya Hangover Pill.webp" alt="" style="max-width: 100%;">
+                            <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Himalaya PS (PartySmart)</h5>
+                            <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 29.90</p>
+                            <br><a href="#services" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+</section>
+
     <!-- Footer -->
-    <footer class="footer p-3 text-center">
-        <p>&copy; 2024 Brotenders. All rights reserved.</p>
+    <footer class="footer p-5 text-center">
+        <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
+            <div class="row">
+                <div class="col-md-4 footer-section">
+                    <img src="XENOCHROME-NOBG-TEXT.png" alt="Bartini Bartending" class="footer-logo" style="size: 100%; margin-bottom: 30px;">
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">Events</a>
+                    <a href="pricing.html">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Contact</h3>
+                    <p>info@bartini.com<br>+6018-2548567</p>
+                    <div class="social-icons">
+                        <a href="www.instagram.com/xenochrome_technologies"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p style="color: white;">&copy; 2024 Bartini Bartending. All rights reserved.</p>
+                
+            </div>
+        </div>
+        
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
