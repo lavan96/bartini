@@ -11,8 +11,17 @@
     <style>
         body {
             background-color: #000000;
-            color: #f0e68c; /* Off-white */
+            color: white; /* Off-white */
             font-family: 'Roboto', sans-serif;
+        }
+
+        #bg{
+            background-image: url(bartini-red-bg.png);
+            background-repeat: no-repeat;
+            
+            background-attachment: fixed;
+            max-height: 100%;
+            
         }
 
         .navbar, .footer {
@@ -23,7 +32,7 @@
 
         .navbar-brand, .nav-link {
             
-            color: #f0e68c !important; /* Off-white */
+            color: white !important; /* Off-white */
             font-family: 'Silver Medal', sans-serif;
             font-weight: 100;
             text-transform: uppercase;
@@ -31,29 +40,29 @@
         }
 
         .nav-link:hover {
-            color: #ffd700 !important; /* Gold */
+            color: #ff0000 !important; /* Gold */
         }
 
         .btn-primary {
             
-            background-color: #f0e68c; /* Off-white */
+            background-color: white; /* Off-white */
             color: #000000;
-            border-color: #f0e68c;
+            border-color: white;
             border-radius: 10px;
             font-family: 'Ubuntu', sans-serif;
             font-weight: 600;
         }
 
         .btn-primary:hover {
-            background-color: #ffd700; /* Gold */
-            border-color: #ffd700;
-            color: #000000;
+            background-color: #ff0000; /* Gold */
+            border-color: #ff0000;
+            color: white;
             border-radius: 10px;
             font-family: 'Ubuntu', sans-serif;
         }
 
         h1, h2, h5, p, .card-title, .card-text {
-            color: #f0e68c; /* Off-white */
+            color: white; /* Off-white */
         }
 
         h1{
@@ -76,21 +85,21 @@
         }
 
         .card {
-            background-color: #000000;
+            background-color: transparent;
             border: 0px solid #ffd700; /* Gold */
             border-radius: 0px;
         }
 
         .card-title {
-            color: #ffd700;
+            color: white;
         }
 
         .card-body {
-            color: #f0e68c; /* Off-white */
+            color: white; /* Off-white */
         }
 
         .footer {
-            color: #f0e68c;
+            color: white;
         }
 
         .footer-logo {
@@ -223,29 +232,30 @@
     </nav>
 </div>
     <!-- Home Section -->
-    <section id="web" class="web" class="" style="background-image: url(hero.webp); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
+    <section id="web" class="web" class="" style="background-image: url(hero.png); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
         <div class="container" style="align-items:flex-end;">
-            <h1 class="display-4">Welcome to <br><span style="color: #ffd700; ">Bartini<br>Bartending</span></h1>
-            <p class="lead" style="font-family: 'Great Vibes', cursive; ">Here for all your party favors</p><br>
+            <h1 class="display-4">Welcome to <br><span style="color: #ff0000; font-size: 1.2em;">Bartini<br>Bartending</span></h1><br>
+            <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2.5em;">Here for all your party favors</p><br>
             <a href="#services" class="btn btn-primary">Learn More</a>
         </div>
     </section>
-    <section  id="mobile" class="text-center" style="background-image: url(hero.webp); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
+    <section  id="mobile" class="text-center" style="background-image: url(hero.png); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
         <div class="container" style="align-items:flex-end; background-color: #000000a9; padding: 3em;">
-            <h1 class="display-4">Welcome to <br><span style="color: #ffd700; ">Bartini<br>Bartending</span></h1>
+            <h1 class="display-4">Welcome to <br><span style="color: #ff0000; ">Bartini<br>Bartending</span></h1>
             <p class="lead" style="font-family: 'Great Vibes', cursive;">Here for all your party favors</p><br>
             <a href="#services" class="btn btn-primary">Learn More</a>
         </div>
     </section>
 </section>
 
+<div id="bg">
 <!-- About Section -->
 <section id="about" class="" style="padding-top: 4em;">
     <div class="container">
         <div class="row">
             <div class="col-md-6" style="padding: 2em; align-content:center;">
-                <h2 style="">Bartending without <span style="color: #ffd700;">Boundaries</span></h2>
-                <br><h2 style="font-size: 2em;">We bring the bar <span style="color: #ffd700;">to you</span></h2>
+                <h2 style="">Bartending without <span style="color: #ff0000;">Boundaries</span></h2>
+                <br><h2 style="font-size: 2em;">We bring the bar <span style="color: #ff0000;">to you</span></h2>
                 <br><p style="text-align: justify;">A professional, fully insured bartending company in Klang Valley, that offers you and your guests a one-of-a-kind bartending experience. We serve weddings, special & corporate events with our portable bars and other unique bar rental options. We specialize in signature craft cocktails using seasonal and fresh ingredients and are committed to providing you and your guests a custom & memorable experience that will be talked about for days and toasted to for years to come!</p>
             </div>
             <div class="col-md-6" style="align-content: center; padding: 2em;">
@@ -256,7 +266,7 @@
 </section>
     <!-- Services Section -->
     <section id="services" class="p-5">
-        <h2 class="text-center mb-4 mobile" style=" padding-bottom: 0.3em;">Events  <br><span style="color: #ffd700;">Catalogue</span></h2>
+        <h2 class="text-center mb-4 mobile" style=" padding-bottom: 0.3em;">Events  <br><span style="color: #ff0000;">Catalogue</span></h2>
         <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
             <div class="carousel-inner">
               <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
@@ -320,7 +330,7 @@
           </div>
 
         <div class="container web" style="padding-top: 80px;">
-            <h2 class="text-center mb-4" style=" padding-bottom: 0.3em;">Events  <br><span style="color: #ffd700;">Catalogue</span></h2>
+            <h2 class="text-center mb-4" style=" padding-bottom: 0.3em;">Events  <br><span style="color: #ff0000;">Catalogue</span></h2>
             <div class="row text-center g-4">
                 <div class="col-md-4">
                     <div class="card">
@@ -437,9 +447,9 @@
                 </div>
             </div>
             <div class="col-md-6 text-center" style="padding: 4em; align-content:center;">
-                <h2 style="">Our Signature <span style="color: #ffd700; font-size: 1em;">Cocktails</span></h2>
+                <h2 style="">Our Signature <span style="color: #ff0000; font-size: 1em;">Cocktails</span></h2>
                 <br>
-                <p style="text-align: center; font-family: 'Great Vibes', cursive; font-size: 2em; color: #ffd700;">
+                <p style="text-align: center; font-family: 'Great Vibes', cursive; font-size: 2em; color: white">
                     Make the bar the beating heart of your celebration with our signature cocktails. All you have to do is sit back, sip, and enjoy the night.
                 </p>
                 <br>
@@ -452,7 +462,7 @@
 
 
         <section id="services" class="p-5">
-            <h2 class="text-center mb-4 mobile" style="font-size:2em; padding-bottom: 0.3em;">Professional & Reliable  <br><span style="color: #ffd700;">Bar Services</span></h2>
+            <h2 class="text-center mb-4 mobile" style="font-size:2em; padding-bottom: 0.3em;">Professional & Reliable  <br><span style="color: #ff0000;">Bar Services</span></h2>
             <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
                 <div class="carousel-inner">
                   <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
@@ -518,7 +528,7 @@
               </div>
 
               <div class="container web" style="padding-top: 80px;">
-                <h2 class="text-center mb-4" style=" padding-bottom: 0.3em;">Professional & Reliable  <br><span style="color: #ffd700;">Bar Services</span></h2>
+                <h2 class="text-center mb-4" style=" padding-bottom: 0.3em;">Professional & Reliable  <br><span style="color: #ff0000;">Bar Services</span></h2>
                 <div class="row text-center g-4">
                     <div class="col-md-4">
                         <div class="card">
@@ -588,10 +598,10 @@
     <!-- Contact Section -->
     <section id="contact" class="p-5">
         <div class="container">
-            <h2 class="text-center mb-4" style=" padding-top: 2em;">Get a <span style="color: #ffd700;">Quote</span></h2>
+            <h2 class="text-center mb-4" style=" padding-top: 2em;">Get a <span style="color: #ff0000;">Quote</span></h2>
             <div class="row">
                 <div class="text-center">
-                    <h5 style="color: #ffd700; font-size: 2.3em;">Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</h5>
+                    <h5 style="color: white; font-size: 2.3em;">Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</h5>
                     <p></p>
                 </div>
                 
@@ -600,14 +610,14 @@
     </section>
 
     <section id="services" class="p-5">
-        <h2 class="text-center mb-4 mobile" style="font-size:4em; padding-bottom: 0.3em;">Our  <br><span style="color: #ffd700;">Shop</span></h2>
+        <h2 class="text-center mb-4 mobile" style="font-size:4em; padding-bottom: 0.3em;">Our  <br><span style="color: #ff0000;">Shop</span></h2>
         <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
             <div class="carousel-inner">
               <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
                 <div class="card">
                     <div class="card-body">
                         
-                        <img src="Bailey's Chocolate.png" alt="" style="max-width: 100%;">
+                        <img src="Bailey's Chocolate-nobg.png" alt="" style="max-width: 100%;">
                         <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Bailey's Chocolate 375g</h5>
                         <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 98.00</p>
                         <br><a href="#services" class="btn btn-primary">Buy Now</a>
@@ -617,7 +627,7 @@
               <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
                 <div class="card">
                     <div class="card-body">
-                        <img src="Cocktail chocolates.png" alt="" style="max-width: 100%;">
+                        <img src="Cocktail chocolates-nobg.png" alt="" style="max-width: 100%;">
                         <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Liqeur Cocktail 16 Flavors</h5>
                         <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
                         <br><a href="#services" class="btn btn-primary">Buy Now</a>
@@ -628,7 +638,7 @@
                 <div class="card">
                     <div class="card-body">
                         
-                        <img src="Coffee Liqueur Chocolates.png" alt="" style="max-width: 100%;">
+                        <img src="Coffee Liqueur Chocolates-nobg.png" alt="" style="max-width: 100%;">
                         <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Coffee Liqueur 187g (12pcs)</h5>
                         <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
                         <br><a href="#services" class="btn btn-primary">Buy Now</a>
@@ -653,7 +663,7 @@
           </div>
 
           <div class="container web" style="padding-top: 80px;">
-            <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Our  <br><span style="color: #ffd700; font-size: 1.5em;">Shop</span></h2>
+            <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Our  <br><span style="color: #ff0000; font-size: 1.5em;">Shop</span></h2>
             <div class="row text-center g-4">
                 <div class="col-md-3">
                     <div class="card">
@@ -701,7 +711,7 @@
             
         </div>
 </section>
-
+</div>
     <!-- Footer -->
     <footer class="footer p-5 text-center">
         <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
