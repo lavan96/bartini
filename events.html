@@ -11,8 +11,17 @@
     <style>
         body {
             background-color: #000000;
-            color: #f0e68c; /* Off-white */
+            color: white; /* Off-white */
             font-family: 'Roboto', sans-serif;
+        }
+
+        #bg{
+            background-image: url(bartini-red-bg.png);
+            background-repeat: no-repeat;
+            
+            background-attachment: fixed;
+            max-height: 100%;
+            
         }
 
         .navbar, .footer {
@@ -23,7 +32,7 @@
 
         .navbar-brand, .nav-link {
             
-            color: #f0e68c !important; /* Off-white */
+            color: white !important; /* Off-white */
             font-family: 'Silver Medal', sans-serif;
             font-weight: 100;
             text-transform: uppercase;
@@ -31,29 +40,29 @@
         }
 
         .nav-link:hover {
-            color: #ffd700 !important; /* Gold */
+            color: #ff0000 !important; /* Gold */
         }
 
         .btn-primary {
             
-            background-color: #f0e68c; /* Off-white */
+            background-color: white; /* Off-white */
             color: #000000;
-            border-color: #f0e68c;
+            border-color: white;
             border-radius: 10px;
             font-family: 'Ubuntu', sans-serif;
             font-weight: 600;
         }
 
         .btn-primary:hover {
-            background-color: #ffd700; /* Gold */
-            border-color: #ffd700;
-            color: #000000;
+            background-color: #ff0000; /* Gold */
+            border-color: #ff0000;
+            color: white;
             border-radius: 10px;
             font-family: 'Ubuntu', sans-serif;
         }
 
         h1, h2, h5, p, .card-title, .card-text {
-            color: #f0e68c; /* Off-white */
+            color: white; /* Off-white */
         }
 
         h1{
@@ -76,21 +85,21 @@
         }
 
         .card {
-            background-color: #000000;
+            background-color: transparent;
             border: 0px solid #ffd700; /* Gold */
             border-radius: 0px;
         }
 
         .card-title {
-            color: #ffd700;
+            color: white;
         }
 
         .card-body {
-            color: #f0e68c; /* Off-white */
+            color: white; /* Off-white */
         }
 
         .footer {
-            color: #f0e68c;
+            color: white;
         }
 
         .footer-logo {
@@ -100,25 +109,25 @@
     margin-bottom: 20px;
 }
 .footer-section h3 {
-    color: #ffd700;
+    color: #ff0000;
     margin-bottom: 15px;
 }
 .footer-section a {
-    color: #f0e68c;
+    color: white;
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
 }
 .footer-section a:hover {
-    color: #ffd700;
+    color: #ff0000;
 }
 .social-icons a {
-    color: #f0e68c;
+    color: white;
     font-size: 24px;
     margin-right: 15px;
 }
 .social-icons a:hover {
-    color: #ffd700;
+    color: #ff0000;
 }
 
         .form-control, .form-label {
@@ -205,8 +214,8 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Bartini Bartending</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FFd700;">
-                <span class="navbar-toggler-icon" style="align-content: center;"> <i class="fa-solid fa-bars" style="color: #FFd700;"></i></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FF0000;">
+                <span class="navbar-toggler-icon" style="align-content: center;"> <i class="fa-solid fa-bars" style="color: #FF0000;"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -221,26 +230,26 @@
     </nav>
 </div>
     <!-- Home Section -->
-    <section id="web" class="web" class="" style="background-image: url(hero.webp); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
+    <section id="web" class="web" class="" style="background-image: url(hero.png); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
         <div class="container" style="align-items:flex-end;">
-            <h1 class="display-4" style="">Events <br><span style="color: #ffd700; font-size: 3rem;">For a Night <br>to Remember</span></h1>
-            <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2em;">Beverage Catering for all Events</p><br>
+            <h1 class="display-4" style="">Events <br><span style="color: #ff0000; font-size: 3rem;">For a Night <br>to Remember</span></h1><br>
+            <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2.5em;">Beverage Catering for all Events</p><br>
             <a href="#services" class="btn btn-primary">Learn More</a>
         </div>
     </section>
-    <section  id="mobile" class="text-center" style="background-image: url(hero.webp); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
+    <section  id="mobile" class="text-center" style="background-image: url(hero.png); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
         <div class="container" style="align-items:flex-end; background-color: #000000a9; padding: 3em;">
-            <h1 class="display-4" style="">Events <br><span style="color: #ffd700; font-size: 2rem;">For a Night to Remember</span></h1>
+            <h1 class="display-4" style="">Events <br><span style="color: #ff0000; font-size: 2rem;">For a Night to Remember</span></h1><br>
             <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2em;">Beverage Catering for all Events</p><br>
             <a href="#services" class="btn btn-primary">Learn More</a>
         </div>
     </section>
 </section>
 
-
+<div id="bg">
     <!-- Services Section -->
     <section id="services" class="p-5">
-        <h2 class="text-center mb-4 mobile" style="padding-bottom: 0.3em;">The <br><span style="color: #ffd700;">Bartini Experience</span></h2>
+        <h2 class="text-center mb-4 mobile" style="padding-bottom: 0.3em;">The <br><span style="color: #ff0000;">Bartini Experience</span></h2>
         <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
             <div class="carousel-inner">
               <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
@@ -282,7 +291,7 @@
           </div>
 
         <div class="container web" style="padding-top: 80px;">
-            <h2 class="text-center mb-4" style=" padding-bottom: 0.3em;">The <br><span style="color: #ffd700;">Bartini Experience</span></h2>
+            <h2 class="text-center mb-4" style=" padding-bottom: 0.3em;">The <br><span style="color: #ff0000;">Bartini Experience</span></h2>
             <div class="row text-center g-4">
                 <div class="col-md-4">
                     <div class="card">
@@ -327,14 +336,14 @@
 
 <section id="about" class="" style="padding-top: 4em;">
     <div class="container">
-        <h2 style=" text-align: center; padding-bottom: 1em; padding-top: 1.5em;">Wedding <span style="color: #ffd700;">Packages</span></h2>
+        <h2 style=" text-align: center; padding-bottom: 1em; padding-top: 1.5em;">Wedding <span style="color: #ff0000;">Packages</span></h2>
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-4" style="align-content: center; padding: 1em;">
                 <div class="card">
                     <div class="card-body">
                         
-                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em;">Minimum <br><br>50-70 <br><br>pax</h5><br><br>
+                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em; color:#ff0000">Minimum <br><br>50-70 <br><br>pax</h5><br><br>
                         <ul class="card-text">
                             <li class="card-text">2X CUSTOMISED COCKTAILS</li>
                             <li>2X CUSTOMISED MOCKTAILS</li>
@@ -355,7 +364,7 @@
             <div class="col-md-4" style="padding: 1em; align-content:center;">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em;">Minimum <br><br>150-200 <br><br>pax</h5><br><br>
+                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em; color:#ff0000">Minimum <br><br>150-200 <br><br>pax</h5><br><br>
                         <ul class="card-text">
                             <li class="card-text">3X CUSTOMISED COCKTAILS</li>
                             <li>2X CUSTOMISED MOCKTAILS</li>
@@ -381,7 +390,7 @@
                 <div class="card">
                     <div class="card-body">
                         
-                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em;">Minimum <br><br>250-300 <br><br>pax</h5><br><br>
+                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em; color:#ff0000">Minimum <br><br>250-300 <br><br>pax</h5><br><br>
                         <ul class="card-text">
                             <li class="card-text">3X CUSTOMISED COCKTAILS</li>
                             <li>2X CUSTOMISED MOCKTAILS</li>
@@ -416,13 +425,13 @@
 
 <section id="about" class="" style="padding-top: 4em;">
     <div class="container">
-        <h2 style=" text-align: center; padding-bottom: 1em; padding-top: 1.5em;">Corporate Event <span style="color: #ffd700;">Packages</span></h2>
+        <h2 style=" text-align: center; padding-bottom: 1em; padding-top: 1.5em;">Corporate Event <span style="color: #ff0000;">Packages</span></h2>
         <div class="row">
             <div class="col-md-6" style="align-content: center; padding: 2em;">
                 <img src="product-launch.webp" class="img-fluid" alt="Bartini team" style="max-width: 100%;">
             </div>
             <div class="col-md-6" style="padding: 2em; align-content:center;">
-                <h2 style="">Product <span style="color: #ffd700;">Launch</span></h2>
+                <h2 style="">Product <span style="color: #ff0000;">Launch</span></h2>
                 
                 <br><p style="text-align: justify;">For the launch of a new brand or a grand opening of any event, you can rely on us to ensure it's done.</p>
             </div>
@@ -437,7 +446,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6" style="padding: 2em; align-content:center;">
-                <h2 style="">Private <span style="color: #ffd700;">Events</span></h2>
+                <h2 style="">Private <span style="color: #ff0000;">Events</span></h2>
                 
                 <br><p style="text-align: justify;">Delight your guests, business partners, VIPs, and the media with a
                     specially-crafted cocktail, elevating your company’s image and
@@ -459,7 +468,7 @@
                 <img src="private-event.webp" class="img-fluid" alt="Bartini team" style="max-width: 100%;">
             </div>
             <div class="col-md-6" style="padding: 2em; align-content:center;">
-                <h2 style="">Private <span style="color: #ffd700;">Events</span></h2>
+                <h2 style="">Private <span style="color: #ff0000;">Events</span></h2>
                 
                 <br><p style="text-align: justify;">Delight your guests, business partners, VIPs, and the media with a
                     specially-crafted cocktail, elevating your company’s image and
@@ -478,7 +487,7 @@
                 <img src="customize-event.webp" class="img-fluid" alt="Bartini team" style="max-width: 100%;">
             </div>
             <div class="col-md-6" style="padding: 2em; align-content:center;">
-                <h2 style="">Customize your <span style="color: #ffd700;">Event</span></h2>
+                <h2 style="">Customize your <span style="color: #ff0000;">Event</span></h2>
                 
                 <br><p style="text-align: justify;">Bartini provides a tailored cocktail service designed to match your event theme, fully customized to reflect your brand or product.
                 </p>
@@ -497,7 +506,7 @@
                 <div class="card">
                     <div class="card-body">
                         
-                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em;">Minimum <br><br>50-70 <br><br>pax</h5><br><br>
+                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em; color:#ff0000">Minimum <br><br>50-70 <br><br>pax</h5><br><br>
                         <ul class="card-text">
                             <li class="card-text">4X CUSTOMISED COCKTAILS</li>
                             <li>3X CUSTOMISED MOCKTAILS</li>
@@ -518,7 +527,7 @@
             <div class="col-md-4" style="padding: 1em; align-content:center;">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em;">Minimum <br><br>150-200 <br><br>pax</h5><br><br>
+                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em; color:#ff0000">Minimum <br><br>150-200 <br><br>pax</h5><br><br>
                         <ul class="card-text">
                             <li class="card-text">5X CUSTOMISED COCKTAILS</li>
                             <li>3X CUSTOMISED MOCKTAILS</li>
@@ -544,7 +553,7 @@
                 <div class="card">
                     <div class="card-body">
                         
-                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em;">Minimum <br><br>250-300 <br><br>pax</h5><br><br>
+                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em; color:#ff0000">Minimum <br><br>250-300 <br><br>pax</h5><br><br>
                         <ul class="card-text">
                             <li class="card-text">6X CUSTOMISED COCKTAILS</li>
                             <li>3X CUSTOMISED MOCKTAILS</li>
@@ -579,14 +588,14 @@
 
 <section id="about" class="" style="padding-top: 4em;">
     <div class="container">
-        <h2 style=" text-align: center; padding-bottom: 1em; padding-top: 1.5em;">Birthday <span style="color: #ffd700;">Packages</span></h2>
+        <h2 style=" text-align: center; padding-bottom: 1em; padding-top: 1.5em;">Birthday <span style="color: #ff0000;">Packages</span></h2>
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-4" style="align-content: flex-start; padding: 1em;">
                 <div class="card" style="align-content: flex-start;">
                     <div class="card-body">
                         
-                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em;">Minimum <br><br>50-70 <br><br>pax</h5><br><br>
+                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em; color:#ff0000">Minimum <br><br>50-70 <br><br>pax</h5><br><br>
                         <ul class="card-text">
                             <li class="card-text">2X CUSTOMISED COCKTAILS</li>
                             <li>2X CUSTOMISED MOCKTAILS</li>
@@ -605,7 +614,7 @@
             <div class="col-md-4" style="padding: 1em; align-content:center;">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em;">Minimum <br><br>150-200 <br><br>pax</h5><br><br>
+                        <h5 class="card-title" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; font-size: 1.7em; padding-left: 1em; color:#ff0000">Minimum <br><br>150-200 <br><br>pax</h5><br><br>
                         <ul class="card-text">
                             <li class="card-text">3X CUSTOMISED COCKTAILS</li>
                             <li>2X CUSTOMISED MOCKTAILS</li>
@@ -649,17 +658,17 @@
     <!-- Contact Section -->
     <section id="contact" class="p-5">
         <div class="container">
-            <h2 class="text-center mb-4" style="padding-top: 2em;">Get a <span style="color: #ffd700;">Quote</span></h2>
+            <h2 class="text-center mb-4" style="padding-top: 2em;">Get a <span style="color: #ff0000;">Quote</span></h2>
             <div class="row">
                 <div class="text-center">
-                    <h5 style="color: #ffd700; font-size: 2.3em;">Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</h5>
+                    <h5 style="color: #ff0000; font-size: 2.3em;">Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</h5>
                     <p></p>
                 </div>
                 
             </div>
         </div>
     </section>
-
+</div>
     
 
     <!-- Footer -->
