@@ -14,8 +14,17 @@
 
 body {
             background-color: #000000;
-            color: #f0e68c; /* Off-white */
+            color: white; /* Off-white */
             font-family: 'Roboto', sans-serif;
+        }
+
+        #bg{
+            background-image: url(bartini-red-bg.png);
+            background-repeat: no-repeat;
+            
+            background-attachment: fixed;
+            max-height: 100%;
+            
         }
 
         .navbar, .footer {
@@ -26,7 +35,7 @@ body {
 
         .navbar-brand, .nav-link {
             
-            color: #f0e68c !important; /* Off-white */
+            color: white !important; /* Off-white */
             font-family: 'Silver Medal', sans-serif;
             font-weight: 100;
             text-transform: uppercase;
@@ -34,29 +43,29 @@ body {
         }
 
         .nav-link:hover {
-            color: #ffd700 !important; /* Gold */
+            color: #ff0000 !important; /* Gold */
         }
 
         .btn-primary {
             
-            background-color: #f0e68c; /* Off-white */
+            background-color: white; /* Off-white */
             color: #000000;
-            border-color: #f0e68c;
+            border-color: white;
             border-radius: 10px;
             font-family: 'Ubuntu', sans-serif;
             font-weight: 600;
         }
 
         .btn-primary:hover {
-            background-color: #ffd700; /* Gold */
-            border-color: #ffd700;
-            color: #000000;
+            background-color: #ff0000; /* Gold */
+            border-color: #ff0000;
+            color: white;
             border-radius: 10px;
             font-family: 'Ubuntu', sans-serif;
         }
 
         h1, h2, h5, p, .card-title, .card-text {
-            color: #f0e68c; /* Off-white */
+            color: white; /* Off-white */
         }
 
         h1{
@@ -79,21 +88,21 @@ body {
         }
 
         .card {
-            background-color: #000000;
+            background-color: transparent;
             border: 0px solid #ffd700; /* Gold */
             border-radius: 0px;
         }
 
         .card-title {
-            color: #ffd700;
+            color: white;
         }
 
         .card-body {
-            color: #f0e68c; /* Off-white */
+            color: white; /* Off-white */
         }
 
         .footer {
-            color: #f0e68c;
+            color: white;
         }
 
         .footer-logo {
@@ -103,55 +112,41 @@ body {
     margin-bottom: 20px;
 }
 .footer-section h3 {
-    color: #ffd700;
+    color: #ff0000;
     margin-bottom: 15px;
 }
 .footer-section a {
-    color: #f0e68c;
+    color: white;
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
 }
 .footer-section a:hover {
-    color: #ffd700;
+    color: #ff0000;
 }
 .social-icons a {
-    color: #f0e68c;
+    color: white;
     font-size: 24px;
     margin-right: 15px;
 }
 .social-icons a:hover {
-    color: #ffd700;
+    color: #ff0000;
 }
 
         .form-control, .form-label {
             background-color: #000000;
-            color: #f0e68c;
-            border: 1px solid #ffd700; /* Gold */
+            color: #ff0000;
+            border: 1px solid #ff0000; /* Gold */
         }
 
         .form-control:focus {
             background-color: #000000;
-            color: #ffd700; /* Gold */
-            border: 1px solid #f0e68c; /* Off-white */
+            color: #ff0000; /* Gold */
+            border: 1px solid white; /* Off-white */
             box-shadow: none;
         }
 
-        .btn-primary {
-            background-color: #f0e68c;
-            color: #000000;
-            border-color: #f0e68c;
-            border-radius: 10px;
-            font-family: 'Ubuntu', sans-serif;
-            font-weight: 600;
-        }
-
-        .btn-primary:hover {
-            background-color: #ffd700;
-            border-color: #ffd700;
-            color: #000000;
-            border-radius: 10px;
-        }
+        
 
         
 
@@ -160,10 +155,11 @@ body {
         }
 
         .contact-form {
-            background-color: #000000;
+            background-color: transparent;
             padding: 20px;
             border-radius: 10px;
-            color: #f0e68c;
+            color: white;
+            font-weight: 600;
         }
 
         @font-face {
@@ -240,8 +236,8 @@ body {
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Bartini Bartending</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FFd700;">
-                    <span class="navbar-toggler-icon" style="align-content: center;"> <i class="fa-solid fa-bars" style="color: #FFd700;"></i></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FF0000;">
+                    <span class="navbar-toggler-icon" style="align-content: center;"> <i class="fa-solid fa-bars" style="color: #FF0000;"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
@@ -255,10 +251,12 @@ body {
             </div>
         </nav>
     </div>
+
+    <div id="bg">
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="text-center mb-5" style="padding-top: 1em;">Get a <span style="color: #ffd700;">Quote</span></h2>
+            <h2 class="text-center mb-5" style="padding-top: 1em;">Get a <span style="color: #ff0000;">Quote</span></h2>
             <form class="contact-form">
                 <div class="row" style="padding-top: 2em;">
                     <div class="col-md-4">
@@ -353,7 +351,7 @@ body {
             </form>
         </div>
     </section>
-
+</div>
     <!-- Footer -->
     <footer class="footer p-5 text-center">
         <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
