@@ -1,749 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bartini Bartending</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&family=Anton+SC&family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.css" integrity="sha512-bWYN2AWIkJL+UdLBJRvqGm6FMPJ7b6rMRNjlhpmZcUyV+in5Gr2ZPytvNC+RU0LO/vH1seIze1ZueA7SLE7eqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body {
-            background-color: #000000;
-            color: #f0e68c; /* Off-white */
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .navbar, .footer {
-            background-color: #000000;
-        }
-
-        .navbar-brand, .nav-link {
-            
-            color: #f0e68c !important; /* Off-white */
-            font-family: 'Bebas Neue', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .nav-link:hover {
-            color: #ffd700 !important; /* Gold */
-        }
-
-        .btn-primary {
-            
-            background-color: #f0e68c; /* Off-white */
-            color: #000000;
-            border-color: #f0e68c;
-            border-radius: 10px;
-            font-family: 'Ubuntu', sans-serif;
-            font-weight: 600;
-        }
-
-        .btn-primary:hover {
-            background-color: #ffd700; /* Gold */
-            border-color: #ffd700;
-            color: #000000;
-            border-radius: 10px;
-            font-family: 'Ubuntu', sans-serif;
-        }
-
-        h1, h2, h5, p, .card-title, .card-text {
-            color: #f0e68c; /* Off-white */
-        }
-
-        h1, h2 {
-            font-family: 'Anton SC', sans-serif;
-        }
-
-        h5 {
-            font-family: 'Great Vibes', cursive;
-            margin-top: 1em;
-            font-size: 3em;
-            margin-bottom: 1em;
-        }
-
-        .card {
-            background-color: #000000;
-            border: 0px solid #ffd700; /* Gold */
-            border-radius: 0px;
-        }
-
-        .card-title {
-            color: #ffd700;
-        }
-
-        .card-body {
-            color: #f0e68c; /* Off-white */
-        }
-
-        .footer {
-            color: #f0e68c;
-        }
-
-        .footer-logo {
-    max-width: 200px;
-}
-.footer-section {
-    margin-bottom: 20px;
-}
-.footer-section h3 {
-    color: #ffd700;
-    margin-bottom: 15px;
-}
-.footer-section a {
-    color: #f0e68c;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-}
-.footer-section a:hover {
-    color: #ffd700;
-}
-.social-icons a {
-    color: #f0e68c;
-    font-size: 24px;
-    margin-right: 15px;
-}
-.social-icons a:hover {
-    color: #ffd700;
-}
-
-        .form-control, .form-label {
-            background-color: #000000;
-            color: #f0e68c;
-            border: 1px solid #ffd700; /* Gold */
-        }
-
-        .form-control:focus {
-            background-color: #000000;
-            color: #ffd700; /* Gold */
-            border: 1px solid #f0e68c; /* Off-white */
-            box-shadow: none;
-        }
-
-        @media screen and (max-width: 768px) {
-            #web{
-                display:none;
-
-            }
-
-            #mobile{
-                display: block;
-            }
-
-            .web{
-                display:none;
-
-            }
-
-            .mobile{
-                display: block;
-            }
-
-            .navbar-nav{
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align: right;
-}
-        }
-        @media screen and (min-width: 769px) {
-            #web{
-                display:block;
-
-            }
-
-            #mobile{
-                display: none;
-            }
-
-            .web{
-                display:block;
-
-            }
-
-            .mobile{
-                display: none;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>eCOLE Learning Exchange 11.0 – Summary</title>
+  <style type="text/css">
+    /* Ensure the email is responsive in mobile clients */
+    body, table, td, p {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #555555;
+      line-height: 1.5;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .header {
+      background-color: #0c1e38;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #333333;
+    }
+    .content p {
+      margin: 0 0 16px 0;
+    }
+    .content ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+    }
+    .content li {
+      margin-bottom: 8px;
+    }
+    .footer {
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #999999;
+      border-top: 1px solid #dddddd;
+    }
+    /* Responsive adjustments */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 95% !important;
+      }
+      .header h1 {
+        font-size: 20px !important;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bartini Bartending</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FFd700;">
-                <span class="navbar-toggler-icon" style="align-content: center;"> <i class="fa-solid fa-bars" style="color: #FFd700;"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-    <!-- Home Section -->
-    <section id="web" class="web" class="" style="background-image: url(hero.webp); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
-        <div class="container" style="align-items:flex-end;">
-            <h1 class="display-4">Welcome to <br><span style="color: #ffd700; font-size: 5rem;">Bartini<br>Bartending</span></h1>
-            <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2em;">Here for all your party favors</p><br>
-            <a href="#services" class="btn btn-primary">Learn More</a>
-        </div>
-    </section>
-    <section  id="mobile" class="text-center" style="background-image: url(hero.webp); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
-        <div class="container" style="align-items:flex-end; background-color: #000000a9; padding: 3em;">
-            <h1 class="display-4">Welcome to <br><span style="color: #ffd700; font-size: 5rem;">Bartini<br>Bartending</span></h1>
-            <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2em;">Here for all your party favors</p><br>
-            <a href="#services" class="btn btn-primary">Learn More</a>
-        </div>
-    </section>
-</section>
+  <!-- Outer table to center the email in most email clients -->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center" style="padding: 20px;">
+        <!-- Container table -->
+        <table class="container" border="0" cellspacing="0" cellpadding="0">
+          <!-- Header section -->
+          <tr>
+            <td class="header">
+              <h1>eCOLE Learning Exchange 11.0</h1>
+              <p style="margin: 0; font-size: 14px;">A Comprehensive LMS for Enhanced Digital Education</p>
+            </td>
+          </tr>
 
-<!-- About Section -->
-<section id="about" class="" style="padding-top: 4em;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6" style="padding: 2em; align-content:center;">
-                <h2 style="font-size: 4em;">Bartending without <span style="color: #ffd700;">Boundaries</span></h2>
-                <br><h2 style="font-size: 2.5em;">We bring the bar <span style="color: #ffd700;">to you</span></h2>
-                <br><p style="text-align: justify;">A professional, fully insured bartending company in Klang Valley, that offers you and your guests a one-of-a-kind bartending experience. We serve weddings, special & corporate events with our portable bars and other unique bar rental options. We specialize in signature craft cocktails using seasonal and fresh ingredients and are committed to providing you and your guests a custom & memorable experience that will be talked about for days and toasted to for years to come!</p>
-            </div>
-            <div class="col-md-6" style="align-content: center; padding: 2em;">
-                <img src="bartini-header.webp" class="img-fluid" alt="Bartini team">
-            </div>
-        </div>
-    </div>
-</section>
-    <!-- Services Section -->
-    <section id="services" class="p-5">
-        <h2 class="text-center mb-4 mobile" style="font-size:4em; padding-bottom: 0.3em;">Events  <br><span style="color: #ffd700;">Catalogue</span></h2>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
-            <div class="carousel-inner">
-              <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="wedding-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                        <img src="wedding.webp" alt="" style="max-width: 100%;">
-                        <h5 class="card-title">Weddings</h5>
-                        <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
-                        <br><a href="#services" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="corporate-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                        <img src="corporate.webp" alt="" style="max-width: 100%;">
-                        <h5 class="card-title">Corporate Events</h5>
-                        <p class="card-text">Elevate your corporate events with Bartini Bartenders' professional drink services, perfect for any business gathering. We ensure your event runs smoothly with expertly crafted beverages.</p>
-                        <br><a href="#services" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="private-function-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                        <img src="private-function.webp" alt="" style="max-width: 100%;">
-                        <h5 class="card-title">Private Functions</h5>
-                        <p class="card-text">Whether it's an intimate gathering or a large private event, Bartini Bartenders provides exceptional bartending services that will impress your guests. We tailor our offerings to match the unique vibe of your function, ensuring a seamless and luxurious experience.</p>
-                        <br><a href="#services" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="birthday-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                        <img src="birthday.webp" alt="" style="max-width: 100%;">
-                        <h5 class="card-title">Birthdays</h5>
-                        <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
-                        <br><a href="#services" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="bachelor-party-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                        <img src="bachelor-party.webp" alt="" style="max-width: 100%;">
-                        <h5 class="card-title">Bachelor Parties</h5>
-                        <p class="card-text">Make your bachelor party a night to remember with Bartini Bartenders. Our professional bartenders and mixologists will keep the drinks flowing, ensuring you and your friends enjoy top-quality service and a fantastic time before the big day.</p>
-                        <br><a href="#services" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <img src="cocktail-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                        <img src="cocktails.webp" alt="" style="max-width: 100%;">
-                        <h5 class="card-title">Cocktail & Mocktails</h5>
-                        <p class="card-text">Enjoy a variety of expertly crafted cocktails and mocktails designed to match your event's theme and preferences.</p>
-                        <br><a href="#services" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+          <!-- Content section -->
+          <tr>
+            <td class="content">
+              <p>Hello [Recipient Name],</p>
+              <p>
+                We hope this message finds you well. We are excited to share a brief summary of 
+                <strong>eCOLE Learning Exchange (eLX) 11.0</strong>, an advanced Learning Management System 
+                developed by <strong>Innove Technologies Pte Ltd</strong>. This platform is designed to transform 
+                digital education delivery across schools, corporate training programs, and private learning institutions.
+              </p>
 
-        <div class="container web" style="padding-top: 80px;">
-            <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Events  <br><span style="color: #ffd700;">Catalogue</span></h2>
-            <div class="row text-center g-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="wedding-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="wedding.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Weddings</h5>
-                            <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
-                            <br><br><br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="corporate-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="corporate.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Corporate Events</h5>
-                            <p class="card-text">Elevate your corporate events with Bartini Bartenders' professional drink services, perfect for any business gathering. We ensure your event runs smoothly with expertly crafted beverages.</p>
-                            <br><br><br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="private-function-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="private-function.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Private Functions</h5>
-                            <p class="card-text">Whether it's an intimate gathering or a large private event, Bartini Bartenders provides exceptional bartending services that will impress your guests. We tailor our offerings to match the unique vibe of your function, ensuring a seamless and luxurious experience.</p>
-                            <br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center g-4" style="padding-top: 3em; text-align: center;">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="birthday-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="birthday.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Birthdays</h5>
-                            <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
-                            <br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="bachelor-party-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="bachelor-party.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Bachelor Parties</h5>
-                            <p class="card-text">Make your bachelor party a night to remember with Bartini Bartenders. Our professional bartenders and mixologists will keep the drinks flowing, ensuring you and your friends enjoy top-quality service and a fantastic time before the big day.</p>
-                            <br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-        </div>
-</section>
+              <h2>Overview</h2>
+              <p>
+                eLX is a web-based and app-based platform that offers virtual classrooms, streamlined content management, 
+                interactive teacher-student communication, and robust performance tracking.
+              </p>
 
-<!-- About Section -->
-<section id="about" class="" style="padding-top: 4em;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6" style="align-content: center; padding: 2em;">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="max-width: 100%;" data-bs-interval="2000">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="whiskey-sour.webp" alt="" style="max-width: 100%;">
-                                    <h5 class="card-title" style="color: #ffd700;">Whiskey Sour</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="max-width: 100%;" data-bs-interval="2000">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="old-fashioned-cocktail.webp" alt="" style="max-width: 100%;">
-                                    <h5 class="card-title" style="color: #ff6f00;">Old Fashioned</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="max-width: 100%;" data-bs-interval="2000">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="southside-cocktail.webp" alt="" style="max-width: 100%;">
-                                    <h5 class="card-title" style="color: #9dff00;">Southside</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="max-width: 100%;" data-bs-interval="2000">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="bramble-cocktail.webp" alt="" style="max-width: 100%;">
-                                    <h5 class="card-title" style="color: #d80082;">Bramble</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="max-width: 100%;" data-bs-interval="2000">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <img src="bloody-mary-cocktail.webp" alt="" style="max-width: 100%;">
-                                    <h5 class="card-title" style="color: #ff1500;">Bloody Mary</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            <div class="col-md-6 text-center" style="padding: 4em; align-content:center;">
-                <h2 style="font-size: 4em;">Our Signature <span style="color: #ffd700; font-size: 1.5em;">Cocktails</span></h2>
-                <br>
-                <p style="text-align: center; font-family: 'Great Vibes', cursive; font-size: 2em; color: #ffd700;">
-                    Make the bar the beating heart of your celebration with our signature cocktails. All you have to do is sit back, sip, and enjoy the night.
-                </p>
-                <br>
-                <a href="#services" class="btn btn-primary">Learn More</a>
-            </div>
-        </div>
-    </div>
-</section>
+              <h2>Key Features</h2>
+              <ul>
+                <li><strong>Course &amp; Content Management:</strong> Organizes lectures, topics, and schedules with controlled access to digital resources.</li>
+                <li><strong>Personalized Teaching &amp; Learning:</strong> Direct teacher-student interaction via messaging services, forums, and announcements.</li>
+                <li><strong>Automated Testing &amp; Evaluation:</strong> Online tests with instant grading, scorecards, and a dynamic question bank.</li>
+                <li><strong>Intelligent Course Scheduling:</strong> Customizes class schedules based on student performance, subjects, and teacher availability.</li>
+                <li><strong>Student Progress &amp; Reporting:</strong> Detailed progress reports, grade books, and assessment records.</li>
+                <li><strong>Mobile Integration:</strong> Attendance tracking, schedule management, and instant notifications through mobile apps.</li>
+                <li><strong>Communication &amp; Engagement:</strong> Discussion forums, newsletters, and direct messaging between students, teachers, and parents.</li>
+              </ul>
 
+              <h2>Benefits for Stakeholders</h2>
+              <ul>
+                <li><strong>Students:</strong> Personalized learning, flexible schedules, and real-time interaction with teachers.</li>
+                <li><strong>Teachers:</strong> Automated grading, structured course planning tools, and student progress tracking.</li>
+                <li><strong>Educational Institutions:</strong> Scalable, customizable LMS that streamlines content management and fosters engagement.</li>
+                <li><strong>Parents:</strong> Real-time access to student progress, attendance records, and academic reports.</li>
+              </ul>
 
+              <h2>Why Choose eLX?</h2>
+              <ul>
+                <li>Flexible, modular customization options.</li>
+                <li>Suitable for a variety of educational and training settings.</li>
+                <li>Cloud-based accessibility and mobile compatibility for seamless learning experiences.</li>
+                <li>Proven success in enhancing education quality through technology-driven solutions.</li>
+              </ul>
 
-        <section id="services" class="p-5">
-            <h2 class="text-center mb-4 mobile" style="font-size:4em; padding-bottom: 0.3em;">Professional & Reliable  <br><span style="color: #ffd700;">Bar Services</span></h2>
-            <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="portable-bar-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="portable-bar.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Portable Bar</h5>
-                            <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
-                            <br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="cocktail-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="cocktails.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Cocktail & Mocktails</h5>
-                            <p class="card-text">Enjoy a variety of expertly crafted cocktails and mocktails designed to match your event's theme and preferences.</p>
-                            <br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="bartender-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="bartender-1.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Bartenders</h5>
-                            <p class="card-text">Elevate your corporate events with Bartini Bartenders' professional drink services, perfect for any business gathering. We ensure your event runs smoothly with expertly crafted beverages.</p>
-                            <br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="glassware-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="glassware.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Glasswares</h5>
-                            <p class="card-text">Whether it's an intimate gathering or a large private event, Bartini Bartenders provides exceptional bartending services that will impress your guests. We tailor our offerings to match the unique vibe of your function, ensuring a seamless and luxurious experience.</p>
-                            <br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="party-games-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                            <img src="party-games-2.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title">Party Games</h5>
-                            <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
-                            <br><a href="#services" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                  </div>
+              <p>
+                For more information, feel free to visit:<br>
+                <a href="http://www.innove.com.sg" style="color: #1a73e8;">www.innove.com.sg</a> | 
+                <a href="http://www.ecoleinfo.com" style="color: #1a73e8;">www.ecoleinfo.com</a>
+              </p>
 
-                
-                  
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+              <p>
+                Thank you for taking the time to learn about eLX 11.0. 
+                If you have any questions or would like to explore implementation options, please let us know.
+              </p>
 
-              <div class="container web" style="padding-top: 80px;">
-                <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Professional & Reliable  <br><span style="color: #ffd700;">Bar Services</span></h2>
-                <div class="row text-center g-4">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="portable-bar-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                                <img src="portable-bar.webp" alt="" style="max-width: 100%;">
-                                <h5 class="card-title">Portable Bar</h5>
-                                <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
-                                <br><br><br><a href="#services" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="cocktail-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                                <img src="cocktails.webp" alt="" style="max-width: 100%;">
-                                <h5 class="card-title">Cocktails & Mocktails</h5>
-                                <p class="card-text">Enjoy a diverse selection of expertly crafted cocktails and mocktails, tailored to suit your event's theme. Bartini Bartenders creates drinks that perfectly match your preferences.</p>
-                                <br><br><br><a href="#services" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="bartender-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                                <img src="bartender-1.webp" alt="" style="max-width: 100%;">
-                                <h5 class="card-title">Bartenders</h5>
-                                <p class="card-text">Whether it's an intimate gathering or a large private event, Bartini Bartenders provides exceptional bartending services that will impress your guests. We tailor our offerings to match the unique vibe of your function, ensuring a seamless and luxurious experience.</p>
-                                <br><a href="#services" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-center g-4" style="padding-top: 3em; text-align: center;">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="glassware-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                                <img src="glassware.webp" alt="" style="max-width: 100%;">
-                                <h5 class="card-title">Glasswares</h5>
-                                <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
-                                <br><a href="#services" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="party-games-icon.png" alt="" style="max-width: 30%; padding-bottom: 2em;">
-                                <img src="party-games-2.webp" alt="" style="max-width: 100%;">
-                                <h5 class="card-title">Party Games</h5>
-                                <p class="card-text">Make your bachelor party a night to remember with Bartini Bartenders. Our professional bartenders and mixologists will keep the drinks flowing, ensuring you and your friends enjoy top-quality service and a fantastic time before the big day.</p>
-                                <br><a href="#services" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2"></div>
-                </div>
-            </div>
-    </section>
+              <p>
+                <strong>Best Regards,</strong><br>
+                [Your Name]<br>
+                <strong>Ehsan Jaya Ventures</strong><br>
+                [Contact Information]
+              </p>
+            </td>
+          </tr>
 
-    
+          <!-- Footer section -->
+          <tr>
+            <td class="footer">
+              <p>
+                <em>Confidentiality Notice:</em> This email and any attachments may contain confidential 
+                information intended solely for the addressed recipient(s). If you are not the intended recipient, 
+                please notify the sender and delete all copies of this message.
+              </p>
+            </td>
+          </tr>
 
-    <!-- Contact Section -->
-    <section id="contact" class="p-5">
-        <div class="container">
-            <h2 class="text-center mb-4" style="font-size: 4em; padding-top: 2em;">Get a <span style="color: #ffd700;">Quote</span></h2>
-            <div class="row">
-                <div class="text-center">
-                    <h5 style="color: #ffd700; font-size: 2.3em;">Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</h5>
-                    <p></p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="p-5">
-        <h2 class="text-center mb-4 mobile" style="font-size:4em; padding-bottom: 0.3em;">Our  <br><span style="color: #ffd700;">Shop</span></h2>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
-            <div class="carousel-inner">
-              <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body">
-                        
-                        <img src="Bailey's Chocolate.png" alt="" style="max-width: 100%;">
-                        <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Bailey's Chocolate 375g</h5>
-                        <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 98.00</p>
-                        <br><a href="#services" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="Cocktail chocolates.png" alt="" style="max-width: 100%;">
-                        <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Liqeur Cocktail 16 Flavors</h5>
-                        <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
-                        <br><a href="#services" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body">
-                        
-                        <img src="Coffee Liqueur Chocolates.png" alt="" style="max-width: 100%;">
-                        <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Coffee Liqueur 187g (12pcs)</h5>
-                        <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
-                        <br><a href="#services" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="Himalaya Hangover Pill.webp" alt="" style="max-width: 100%;">
-                        <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Himalaya PS (PartySmart)</h5>
-                        <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 29.90</p>
-                        <br><a href="#services" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-              </div>
-
-            
-              
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="container web" style="padding-top: 80px;">
-            <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Our  <br><span style="color: #ffd700; font-size: 1.5em;">Shop</span></h2>
-            <div class="row text-center g-4">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
-                            
-                            <img src="Bailey's Chocolate.png" alt="" style="max-width: 100%;">
-                            <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Bailey's Chocolate 375g</h5>
-                            <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 98.00</p>
-                            <br><a href="#services" class="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="Cocktail chocolates.png" alt="" style="max-width: 100%;">
-                            <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Liqeur Cocktail 16 Flavors</h5>
-                            <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
-                            <br><a href="#services" class="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
-                            
-                            <img src="Coffee Liqueur Chocolates.png" alt="" style="max-width: 100%;">
-                            <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Coffee Liqueur 187g (12pcs)</h5>
-                            <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 70.00</p>
-                            <br><a href="#services" class="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="Himalaya Hangover Pill.webp" alt="" style="max-width: 100%;">
-                            <h5 class="card-title" style="font-family: 'Anton SC', sans-serif; font-size: 2.5em;">Himalaya PS (PartySmart)</h5>
-                            <p class="card-text" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5em; font-weight: 700;">RM 29.90</p>
-                            <br><a href="#services" class="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-</section>
-
-    <!-- Footer -->
-    <footer class="footer p-5 text-center">
-        <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
-            <div class="row">
-                <div class="col-md-4 footer-section">
-                    <img src="XENOCHROME-NOBG-TEXT.png" alt="Bartini Bartending" class="footer-logo" style="size: 100%; margin-bottom: 30px;">
-                </div>
-                <div class="col-md-4 footer-section">
-                    <h3>Links</h3>
-                    <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="about.html">Events</a>
-                    <a href="pricing.html">Shop</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="col-md-4 footer-section">
-                    <h3>Contact</h3>
-                    <p>info@bartini.com<br>+6018-2548567</p>
-                    <div class="social-icons">
-                        <a href="www.instagram.com/xenochrome_technologies"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p style="color: white;">&copy; 2024 Bartini Bartending. All rights reserved.</p>
-                
-            </div>
-        </div>
-        
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>

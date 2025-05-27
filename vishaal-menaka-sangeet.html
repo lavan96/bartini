@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Event Name | Bartini Bartending - Detailed event gallery and description.">
+  <meta name="keywords" content="event, portfolio, Bartini, bartending, gallery, event description">
+  <meta name="author" content="Bartini Bartending">
+  <title>Vishaal & Menaka Sangeet | Bartini Bartending</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&family=Anton+SC&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+  <style>
+    /* Base Styles */
+    body {
+      background-color: #000000;
+      color: white; /* Off-white */
+      font-family: 'Roboto', sans-serif;
+    }
+
+    #bg {
+      background-image: url(bartini-black-bg.jpg);
+      background-repeat: repeat;
+      background-attachment: fixed;
+      max-height: 100%;
+    }
+
+    .footer {
+      background-color: #000000;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    .navbar {
+      background-color: transparent;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: white !important; /* Off-white */
+      font-family: 'Silver Medal', sans-serif;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 0.8em;
+    }
+
+    .nav-link:hover {
+      color: #ff0000 !important; /* Gold */
+    }
+
+    .navbar-toggler {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-color: #ff0000;
+    }
+
+    .navbar-toggler-icon i {
+      color: #ff0000;
+      font-size: 1em;
+      padding-top: 0.25em;
+    }
+
+    .dropdown-menu {
+      background-color: transparent;
+      border: none;
+      text-align: right;
+    }
+
+    .dropdown-item {
+      color: white;
+      font-family: 'Silver Medal', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.6em;
+      text-align: right;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+      color: #ff0000;
+      background-color: transparent;
+    }
+
+    .btn-primary {
+      background-color: white; /* Off-white */
+      color: #000000;
+      border-color: white;
+      border-radius: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      background-color: #ff0000; /* Gold */
+      border-color: #ff0000;
+      color: white;
+      border-radius: 10px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    h1,
+    h2,
+    h5,
+    p,
+    .card-title,
+    .card-text {
+      color: white; /* Off-white */
+    }
+
+    h1 {
+      font-family: 'Silver Medal', sans-serif;
+      text-transform: uppercase;
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-family: 'Silver Medal', sans-serif;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+
+    h5 {
+      font-family: 'Great Vibes', cursive;
+      margin-top: 1em;
+      font-size: 3em;
+      margin-bottom: 1em;
+    }
+
+    .card {
+      background-color: transparent;
+      border: 0px solid #ffd700; /* Gold */
+      border-radius: 0px;
+    }
+
+    .card-title {
+      color: white;
+    }
+
+    .card-body {
+      color: white; /* Off-white */
+    }
+
+    .footer {
+      color: white;
+    }
+
+    .footer-logo {
+      max-width: 200px;
+    }
+
+    .footer-section {
+      margin-bottom: 20px;
+    }
+
+    .footer-section h3 {
+      color: #ff0000;
+      margin-bottom: 15px;
+    }
+
+    .footer-section a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .footer-section a:hover {
+      color: #ff0000;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 24px;
+      margin-right: 15px;
+    }
+
+    .social-icons a:hover {
+      color: #ff0000;
+    }
+
+    .form-control,
+    .form-label {
+      background-color: #000000;
+      color: #ff0000;
+      border: 1px solid #ff0000; /* Gold */
+    }
+
+    .form-control:focus {
+      background-color: #000000;
+      color: #ff0000; /* Gold */
+      border: 1px solid white; /* Off-white */
+      box-shadow: none;
+    }
+
+    .contact-section {
+      padding: 60px 0;
+    }
+
+    .contact-form {
+      background-color: transparent;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      font-weight: 600;
+    }
+
+    @font-face {
+      font-family: 'Silver Medal';
+      src: url('Silver Medal.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Custom2';
+      src: url('All Things Must Pass.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .lead{
+        font-family: 'Custom2';
+      src: url('All Things Must Pass.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1em;
+      line-height: 2em;  
+    }
+
+    @media screen and (max-width: 768px) {
+      #web {
+        display: none;
+      }
+
+      #mobile {
+        display: block;
+      }
+
+      .web {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+      }
+
+      .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: right;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      #web {
+        display: block;
+      }
+
+      #mobile {
+        display: none;
+      }
+
+      .web {
+        display: block;
+      }
+
+      .mobile {
+        display: none;
+      }
+
+      h1,
+      h2 {
+        font-size: 4em;
+      }
+
+      .navbar .dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Adjust if needed */
+        opacity: 1;
+        pointer-events: auto;
+        background-color: black;
+      }
+
+      .navbar .dropdown-item {
+        text-align: left;
+      }
+    }
+
+    /* 
+      MASONRY-STYLE GRID 
+      Using 2 columns for a “masonry” flow 
+    */
+    .image-grid {
+      -webkit-column-count: 2; /* Safari / older browsers */
+      -moz-column-count: 2;    /* Firefox / older browsers */
+      column-count: 2;
+      -webkit-column-gap: 20px;
+      -moz-column-gap: 20px;
+      column-gap: 20px;
+    }
+
+    /* Ensure images display inline and maintain spacing */
+    .image-grid img {
+      width: 100%;
+      margin-bottom: 20px;
+      display: inline-block; /* ensures images flow in columns */
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .image-grid img:hover {
+      border-color: #ff0000;
+    }
+
+    .event-details {
+      padding: 2em;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="BARTINI_LETTERHEAD.png" alt="Bartini Logo" id="web" style="max-width: 20%;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="services.html#portable-bar">Portable Bar</a></li>
+              <li><a class="dropdown-item" href="services.html#bartenders">Bartenders</a></li>
+              <li><a class="dropdown-item" href="services.html#cocktails-mocktails">Cocktails &amp; Mocktails</a></li>
+              <li><a class="dropdown-item" href="services.html#glasswares">Glasswares</a></li>
+              <li><a class="dropdown-item" href="services.html#flavor-blaster">Flavor Blaster</a></li>
+              <li><a class="dropdown-item" href="services.html#magical-printpen">Magical Printpen</a></li>
+              <li><a class="dropdown-item" href="services.html#liqueur-chocolates">Liquer Chocolates</a></li>
+            </ul>
+          </li>
+          <!-- Events Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="events.html" id="eventsDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+              <li><a class="dropdown-item" href="events.html#the-bartini-experience">The Bartini Experience</a></li>
+              <li><a class="dropdown-item" href="events.html#wedding-packages">Wedding Packages</a></li>
+              <li><a class="dropdown-item" href="events.html#corporate-event-packeges">Corporate Event Packeges</a></li>
+              <li><a class="dropdown-item" href="events.html#birthday-packages">Birthday Packages</a></li>
+            </ul>
+          </li>
+          <!-- Other Links -->
+          <li class="nav-item">
+            <a class="nav-link" href="get-a-quote.html">Get a Quote</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div id="bg"> 
+<!-- Main Container for the Event Page -->
+  <div class="container py-5" id="mobile">
+    <div class="row" style="padding: 0.5em;">
+
+        <!-- Right Column: Event Details -->
+      <div class="col-md-4 event-details" style="text-align: left;">
+        <h1 style="line-height: 1.5em; padding-bottom: 1em;">Vishaal & Menaka <span style="color: #ff0000;">Sangeet</span></h1>
+        <p class="lead" style="color: #ff0000;">EVENT TYPE</p>
+        <p style="font-family: Great Vibes, cursive; font-size: 1.5em;">Sangeet</p>
+        <p class="lead" style="color: #ff0000;">NO. OF PAX</p>
+        <p style="font-family: Great Vibes, cursive; font-size: 1.5em;">100</p>
+        <p class="lead" style="color: #ff0000;">EVENT LOCATION</p>
+        <p style="font-family: Great Vibes, cursive; font-size: 1.5em;">Boathouse by the Lake</p>
+        
+        <a href="get-a-quote.html" class="btn btn-primary mt-3">Request Quote</a>
+      </div>
+      <!-- Left Column: 2-Column Masonry Grid -->
+      <div class="col-md-8" style="padding: 2em;">
+        <div class="image-grid">
+          <!-- Replace the src attributes with your actual image paths -->
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_155019_Gallery.jpg" alt="Bartender in action 1">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154332_Gallery.jpg" alt="Bartender in action 2">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154518_Gallery.jpg" alt="Bartender in action 3">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154706_Gallery.jpg" alt="Bartender in action 4">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154353_Gallery.jpg" alt="Bartender in action 5">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154954_Gallery.jpg" alt="Bartender in action 6">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_155001_Gallery.jpg" alt="Bartender in action 7">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/IMG_0565.JPG" alt="Bartender in action 8">
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="container py-5" id="web">
+    <div class="row" style="padding: 0.5em;">
+
+        
+      <!-- Left Column: 2-Column Masonry Grid -->
+      <div class="col-md-8" style="padding: 2em;">
+        <div class="image-grid">
+          <!-- Replace the src attributes with your actual image paths -->
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_155019_Gallery.jpg" alt="Bartender in action 1">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154332_Gallery.jpg" alt="Bartender in action 2">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154518_Gallery.jpg" alt="Bartender in action 3">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154706_Gallery.jpg" alt="Bartender in action 4">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154353_Gallery.jpg" alt="Bartender in action 5">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_154954_Gallery.jpg" alt="Bartender in action 6">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/Screenshot_20250104_155001_Gallery.jpg" alt="Bartender in action 7">
+          <img src="portfolio-images/Vishaal & Menaka - Sangeet/IMG_0565.JPG" alt="Bartender in action 8">
+        </div>
+      </div>
+
+      <!-- Right Column: Event Details -->
+      <div class="col-md-4 event-details" style="position: -webkit-sticky;">
+        <h1 style="line-height: 1.5em; padding-bottom: 0.5em;">Vishaal & Menaka <span style="color: #ff0000;">Sangeet</span></h1>
+        <p class="lead" style="color: #ff0000;">EVENT TYPE</p>
+        <p style="font-family: Great Vibes, cursive; font-size: 1.5em;">Sangeet</p>
+        <p class="lead" style="color: #ff0000;">NO. OF PAX</p>
+        <p style="font-family: Great Vibes, cursive; font-size: 1.5em;">100</p>
+        <p class="lead" style="color: #ff0000;">EVENT LOCATION</p>
+        <p style="font-family: Great Vibes, cursive; font-size: 1.5em;">Bouthouse by the Lake</p>
+
+        <a href="get-a-quote.html" class="btn btn-primary mt-3">Request Quote</a>
+      </div>
+    </div>
+  </div>
+</div> 
+
+  
+  <!-- Footer -->
+  <footer class="footer p-5 text-center">
+    <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
+      <div class="row">
+        <div class="col-md-4 footer-section">
+          <img src="BARTINI_PRIMARY.png" alt="Bartini Bartending" class="footer-logo" style="size: 10%; margin-bottom: 30px;">
+        </div>
+        <div class="col-md-4 footer-section">
+          <h3>Links</h3>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="events.html">Events</a>
+          <a href="get-a-quote.html">Get a Quote</a>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="col-md-4 footer-section">
+          <h3>Contact</h3>
+          <p>bartini2024@gmail.com<br>+6012-4217681</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/bartini.my"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61566308133314"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/60124217681"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="color: white;">&copy; 2024 Bartini Bartending. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+    <!-- Here is where Voiceglow renders the widget. -->
+    <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+  </div>
+
+  <script defer>
+    (function () {
+      window.VG_CONFIG = {
+        ID: "h23l1g4pwl3pmlht", // YOUR AGENT ID
+        region: 'na', // YOUR ACCOUNT REGION 
+        render: 'bottom-left', // can be 'full-width' or 'bottom-left' or 'bottom-right'
+        stylesheets: [
+          // Base Voiceglow CSS
+          "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+          // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+        ],
+        // Optional user data -- start
+        // Optional user data -- end
+        // **
+        // userID: 'USER_ID', // If you want to use your own user_id
+        // autostart: true, // Whether to autostart the chatbot with the proactive message
+      }
+      var VG_SCRIPT = document.createElement("script");
+      VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+      VG_SCRIPT.defer = true; // Remove 'defer' if you want widget to load faster (Will affect website loading)
+      document.body.appendChild(VG_SCRIPT);
+    })()
+  </script>
+</body>
+</html>

@@ -20,7 +20,7 @@
         }
 
         #bg{
-            background-image: url(bartini-red-bg.png);
+            background-image: url(bartini-black-bg.jpg);
             background-repeat: repeat;
             
             background-attachment: fixed;
@@ -52,6 +52,35 @@
         .nav-link:hover {
             color: #ff0000 !important; /* Gold */
         }
+
+        .navbar-toggler {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: #ff0000;
+  }
+  .navbar-toggler-icon i {
+    color: #ff0000;
+    font-size: 1em;
+    padding-top:0.25em;
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    background-color: transparent;
+    border: none;
+    text-align: right;
+  }
+  .dropdown-item {
+    color: white;
+    font-family: 'Silver Medal', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    text-align: right;
+  }
+  .dropdown-item:hover, 
+  .dropdown-item:focus {
+    color: #ff0000;
+    background-color: transparent;
+  }
 
         .btn-primary {
             
@@ -230,29 +259,95 @@
                 font-size: 4em;
             }
 
+            .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust if needed */
+  }
+  
+  /* Optionally, you can add a slight fade-in transition */
+  .dropdown-menu {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .navbar .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar .dropdown-item {
+    text-align: left;
+  }
+
         }
     </style>
 </head>
 <body>
 <div class="container">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="BARTINI_LETTERHEAD.png" alt="" style="max-width: 20%;" id="web"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.8); border-color: #FF0000;">
-                <span class="navbar-toggler-icon" style="align-content: center;"> <i class="fa-solid fa-bars" style="color: #FF0000;"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="get-a-quote.html">Get a Quote</a></li>
-                    
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar HTML -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="BARTINI_LETTERHEAD.png" alt="Bartini Logo" id="web" style="max-width: 20%;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+  
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="services.html#portable-bar">Portable Bar</a></li>
+              <li><a class="dropdown-item" href="services.html#bartenders">Bartenders</a></li>
+              <li><a class="dropdown-item" href="services.html#cocktails-mocktails">Cocktails &amp; Mocktails</a></li>
+              <li><a class="dropdown-item" href="services.html#glasswares">Glasswares</a></li>
+              <li><a class="dropdown-item" href="services.html#flavor-blaster">Flavor Blaster</a></li>
+              <li><a class="dropdown-item" href="services.html#magical-printpen">Magical Printpen</a></li>
+              <li><a class="dropdown-item" href="services.html#liqueur-chocolates">Liquer Chocolates</a></li>
+            </ul>
+          </li>
+  
+          <!-- Events Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="events.html" id="eventsDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+              <li><a class="dropdown-item" href="events.html#the-bartini-experience">The Bartini Experience</a></li>
+              <li><a class="dropdown-item" href="events.html#wedding-packages">Wedding Packages</a></li>
+              <li><a class="dropdown-item" href="events.html#corporate-event-packeges">Corporate Event Packeges</a></li>
+              <li><a class="dropdown-item" href="events.html#birthday-packages">Birthday Packages</a></li>
+            </ul>
+          </li>
+  
+          <!-- Other Links -->
+          <li class="nav-item">
+            <a class="nav-link" href="get-a-quote.html">Get a Quote</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
 </div>
     <!-- Home Section -->
     <section id="web" class="web" class="" style="background-image: url(hero.jpg); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
@@ -303,7 +398,7 @@
                         <img src="wedding.webp" alt="" style="max-width: 100%;">
                         <h5 class="card-title">Weddings</h5>
                         <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
-                        
+                        <br><a href="events.html#wedding-packages" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
               </div>
@@ -314,7 +409,7 @@
                         <img src="corporate.webp" alt="" style="max-width: 100%;">
                         <h5 class="card-title">Corporate Events</h5>
                         <p class="card-text">Elevate your corporate events with Bartini Bartenders' professional drink services, perfect for any business gathering. We ensure your event runs smoothly with expertly crafted beverages.</p>
-                        
+                        <br><a href="events.html#corporate-event-packages" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
               </div>
@@ -325,7 +420,7 @@
                         <img src="private-function.webp" alt="" style="max-width: 100%;">
                         <h5 class="card-title">Private Functions</h5>
                         <p class="card-text">Whether it's an intimate gathering or a large private event, Bartini Bartenders provides exceptional bartending services that will impress your guests. We tailor our offerings to match the unique vibe of your function, ensuring a seamless and luxurious experience.</p>
-                        
+                        <br><a href="events.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
               </div>
@@ -336,7 +431,7 @@
                         <img src="birthday.webp" alt="" style="max-width: 100%;">
                         <h5 class="card-title">Birthdays</h5>
                         <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
-                        
+                        <br><a href="events.html#birthday-packages" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
               </div>
@@ -347,13 +442,13 @@
                         <img src="bachelor-party.webp" alt="" style="max-width: 100%;">
                         <h5 class="card-title">Bachelor Parties</h5>
                         <p class="card-text">Make your bachelor party a night to remember with Bartini Bartenders. Our professional bartenders and mixologists will keep the drinks flowing, ensuring you and your friends enjoy top-quality service and a fantastic time before the big day.</p>
-                        
+                        <br><a href="events.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
               </div>
               
             </div>
-            <br><div class="text-center"><a href="events.html" class="btn btn-primary">Learn More</a></div>
+            
           </div>
 
         <div class="container web" style="padding-top: 80px;">
@@ -366,7 +461,7 @@
                             <img src="wedding.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Weddings</h5>
                             <p class="card-text">Make your wedding day unforgettable with Bartini Bartenders' custom drink menus and expert bartending. We tailor our services to your special day, ensuring every toast is memorable.</p>
-                            <br><br><br><a href="events.html" class="btn btn-primary">Learn More</a>
+                            <br><br><br><a href="events.html#wedding-packages" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -377,7 +472,7 @@
                             <img src="corporate.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Corporate Events</h5>
                             <p class="card-text">Elevate your corporate events with Bartini Bartenders' professional drink services, perfect for any business gathering. We ensure your event runs smoothly with expertly crafted beverages.</p>
-                            <br><br><br><a href="events.html" class="btn btn-primary">Learn More</a>
+                            <br><br><br><a href="events.html#corporate-event-packages" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -402,7 +497,7 @@
                             <img src="birthday.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Birthdays</h5>
                             <p class="card-text">Celebrate your special day with flair by letting Bartini Bartenders craft the perfect drinks for your birthday bash. Our expert bartenders will create a festive atmosphere, mixing up custom cocktails and mocktails that make your birthday unforgettable.</p>
-                            <br><a href="events.html" class="btn btn-primary">Learn More</a>
+                            <br><a href="events.html#birthday-packages" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -480,7 +575,7 @@
                     Make the bar the beating heart of your celebration with our signature cocktails. All you have to do is sit back, sip, and enjoy the night.
                 </p>
                 <br>
-                <a href="services.html" class="btn btn-primary">Learn More</a>
+                <a href="services.html#cocktails-mocktails" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>
@@ -499,7 +594,7 @@
                             <img src="portable-bar.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Portable Bar</h5>
                             <p class="card-text">Bartini Bartenders provides portable bar setups that will elevate your celebration. We customize our services to suit the vibe of your event, ensuring a seamless and luxurious experience.</p>
-                            
+                            <br><a href="services.html#portable-bar" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                   </div>
@@ -510,7 +605,7 @@
                             <img src="cocktails.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Cocktail & Mocktails</h5>
                             <p class="card-text">Enjoy a variety of expertly crafted cocktails and mocktails designed to match your event's theme and preferences.</p>
-                            
+                            <br><a href="services.html#cocktails-mocktails" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                   </div>
@@ -521,7 +616,7 @@
                             <img src="bartender-1.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Bartenders</h5>
                             <p class="card-text">Bartini Bartenders offers professional bartending services that will impress your guests. We tailor our bartending to match the unique atmosphere of your function, ensuring a seamless and luxurious experience.</p>
-                            
+                            <br><a href="services.html#bartenders" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                   </div>
@@ -532,7 +627,7 @@
                             <img src="glassware.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Glasswares</h5>
                             <p class="card-text">Bartini Bartenders offers high-quality glassware that will elevate your drinks. We provide the perfect glasses to match your event's style, ensuring a seamless and sophisticated experience for all.</p>
-                            
+                            <br><a href="services.html#glasswares" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                   </div>
@@ -543,7 +638,7 @@
                             <img src="party-games-2.webp" alt="" style="max-width: 100%;">
                             <h5 class="card-title">Party Games</h5>
                             <p class="card-text">Bartini Bartenders provides entertaining party games that will engage your guests. We select games that match the vibe of your event, ensuring a seamless and enjoyable experience.</p>
-                            
+                            <br><a href="services.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                   </div>
@@ -551,7 +646,7 @@
                 
                   
                 </div>
-                <br><div class="text-center"><a href="services.html" class="btn btn-primary">Learn More</a></div>
+                
               </div>
 
               <div class="container web" style="padding-top: 80px;">
@@ -564,7 +659,7 @@
                                 <img src="portable-bar.webp" alt="" style="max-width: 100%;">
                                 <h5 class="card-title">Portable Bar</h5>
                                 <p class="card-text">Bartini Bartenders provides portable bar setups that will elevate your celebration. We customize our services to suit the vibe of your event, ensuring a seamless and luxurious experience.</p>
-                                <br><br><a href="services.html" class="btn btn-primary">Learn More</a>
+                                <br><br><a href="services.html#portable-bar" class="btn btn-primary">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -575,7 +670,7 @@
                                 <img src="cocktails.webp" alt="" style="max-width: 100%;">
                                 <h5 class="card-title">Cocktails & Mocktails</h5>
                                 <p class="card-text">Enjoy a variety of expertly crafted cocktails and mocktails designed to match your event's theme and preferences.</p>
-                                <br><br><br><a href="services.html" class="btn btn-primary">Learn More</a>
+                                <br><br><br><a href="services.html3cocktails-mocktails" class="btn btn-primary">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -586,7 +681,7 @@
                                 <img src="bartender-1.webp" alt="" style="max-width: 100%;">
                                 <h5 class="card-title">Bartenders</h5>
                                 <p class="card-text">Bartini Bartenders offers professional bartending services that will impress your guests. We tailor our bartending to match the unique atmosphere of your function, ensuring a seamless and luxurious experience.</p>
-                                <br><a href="services.html" class="btn btn-primary">Learn More</a>
+                                <br><a href="services.html#bartenders" class="btn btn-primary">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -600,7 +695,7 @@
                                 <img src="glassware.webp" alt="" style="max-width: 100%;">
                                 <h5 class="card-title">Glasswares</h5>
                                 <p class="card-text">Bartini Bartenders offers high-quality glassware that will elevate your drinks. We provide the perfect glasses to match your event's style, ensuring a seamless and sophisticated experience for all.</p>
-                                <br><a href="services.html" class="btn btn-primary">Learn More</a>
+                                <br><a href="services.html#glasswares" class="btn btn-primary">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -629,7 +724,7 @@
             <div class="row">
                 <div class="text-center">
                     <h5 style="color: white; font-size: 2.3em;">Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</h5>
-                    <p></p>
+                    <br><a href="get-a-quote.html" class="btn btn-primary">Request Quote</a>
                 </div>
                 
             </div>
@@ -672,16 +767,7 @@
                     </div>
                 </div>
               </div>
-              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="Himalaya Hangover Pill-nobg.png" alt="" style="max-width: 100%;">
-                        <h5 class="card-title" style="font-family: 'Silver Medal', sans-serif; font-size: 1.6em; text-transform: uppercase; color: #ff0000;">Himalaya PS (PartySmart)</h5><br>
-                        <p class="card-text" style="font-family: 'Custom2', sans-serif; font-size: 1.3em; font-weight: 100;">RM 29.90</p>
-                        <br><a href="https://wa.me/60124217681" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-              </div>
+              
 
             
               
@@ -692,7 +778,7 @@
           <div class="container web" style="padding-top: 80px;">
             <h2 class="text-center mb-4" style="font-size:4em; padding-bottom: 0.3em;">Our  <br><span style="color: #ff0000; font-size: 1.5em;">Shop</span></h2>
             <div class="row text-center g-4">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             
@@ -703,7 +789,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <img src="Cocktail chocolates-nobg.png" alt="" style="max-width: 100%;">
@@ -713,23 +799,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             
                             <img src="Coffee Liqueur Chocolates-nobg.png" alt="" style="max-width: 100%;">
                             <h5 class="card-title" style="font-family: 'Silver Medal', sans-serif; font-size: 1.6em; text-transform: uppercase; color: #ff0000;">Coffee Liqueur 187g (12pcs)</h5><br>
                             <br><p class="card-text" style="font-family: 'Custom2', sans-serif; font-size: 1.3em; font-weight: 100;">RM 70.00</p>
-                            <br><a href="https://wa.me/60124217681" class="btn btn-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="Himalaya Hangover Pill-nobg.png" alt="" style="max-width: 100%;">
-                            <h5 class="card-title" style="font-family: 'Silver Medal', sans-serif; font-size: 1.6em; text-transform: uppercase; color: #ff0000;">Himalaya PS (PartySmart)</h5><br>
-                            <br><p class="card-text" style="font-family: 'Custom2', sans-serif; font-size: 1.3em; font-weight: 100;">RM 29.90</p>
                             <br><a href="https://wa.me/60124217681" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
@@ -752,6 +828,7 @@
                     <a href="services.html">Services</a>
                     <a href="events.html">Events</a>
                     <a href="get-a-quote.html">Get a Quote</a>
+                    <a href="portfolio.html">Portfolio</a>
                     
                 </div>
                 <div class="col-md-4 footer-section">
@@ -759,7 +836,7 @@
                     <p>bartini2024@gmail.com<br>+6012-4217681</p>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/bartini.my"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61566308133314&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61566308133314"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://wa.me/60124217681"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
